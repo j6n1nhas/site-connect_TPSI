@@ -1,0 +1,182 @@
+
+:root
+{
+    --cor-textos: #FF5E5E;
+    --cor-fundos: #514A4A;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADER */
+.links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.links a
+{
+    text-decoration: none;
+    color: var(--cor-textos);
+    margin: 10px 40px;
+    font-size: larger;
+}
+.logo
+{
+    text-decoration: none;
+    color: var(--cor-textos);
+}
+.header
+{
+    display: flex;
+    justify-content: space-between; /* Para ir um elemento para cada ponta */
+    align-items: center; /* Alinhamento horizontal no centro */
+    background-color: var(--cor-fundos);
+    padding: 20px 0px;
+}
+
+/* SLIDESHOW */
+.slideshow
+{
+    background: url("../imgs/eduardo-casajus-gorostiaga-ZWIqGpOYqRg-unsplash.jpg") no-repeat center/cover;
+    height: 100vh;
+    position: relative; /* Para que possamos depois posicionar o botão de "trabalhe remotamente" relativamente a esta imagem */
+}
+.texto-slideshow
+{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.titulo-slideshow a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px;
+    background-color: var(--cor-fundos);
+    color: var(--cor-textos);
+    border-radius: 5px;
+}
+.titulo-slideshow a:hover
+{
+    opacity: 0.8;
+    transition: 1s ease-in-out;
+}
+
+/* SOBRE */
+.container
+{
+    width: 80%;
+    margin: 40px auto; /* O auto vai distribuir o espaço restante acabando centrado verticalmente */
+}
+.texto-sobre
+{
+    margin-top: 15px;
+}
+p
+{
+    line-height: 30px;
+    text-align: left;
+}
+
+/* SERVIÇOS */
+.cartoes
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.cartao *
+{
+    margin: 15px 0;
+    text-align: center;
+}
+.cartao
+{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    box-shadow: 0 20px 1rem rgba(0,0,0,0.8);
+}
+
+/* FORMULÁRIO */
+.formulario
+{
+    width: 60%;
+    position: relative;
+    float: left;
+}
+.formulario input, textarea
+{
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.formulario input[type="submit"]
+{
+    color: var(--cor-textos);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario textarea
+{
+    height: 150px;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+.footer
+{
+    background-color: var(--cor-fundos);
+    color: white;
+    padding: 30px 0;
+}
+.container-footer
+{
+    display: flex;
+    flex-direction: column;
+}
+.informacoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.conteudo, .informacao, .legal
+{
+    margin: 15px;
+}
+.informacoes>div>a
+{
+    display:flex;
+    flex-direction: column;
+    color: var(--cor-textos);
+    text-decoration: none;
+}
+.meios-comunicacao
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.social
+{
+    margin: 40px 30px;
+}
+.social>a
+{
+    margin: 20px 20px;
+}
